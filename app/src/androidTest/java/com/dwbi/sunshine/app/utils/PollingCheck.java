@@ -15,13 +15,13 @@
  *
  * Note: This file copied from the Android CTS Tests
  */
-package com.example.android.sunshine.app.utils;
+package com.dwbi.sunshine.app.utils;
 
 import junit.framework.Assert;
 
 import java.util.concurrent.Callable;
 
-public abstract class PollingCheck {
+public  abstract class PollingCheck {
     private static final long TIME_SLICE = 50;
     private long mTimeout = 3000;
 
@@ -32,7 +32,7 @@ public abstract class PollingCheck {
         mTimeout = timeout;
     }
 
-    protected abstract boolean check();
+    protected  abstract boolean check();
 
     public void run() {
         if (check()) {
